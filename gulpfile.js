@@ -16,7 +16,7 @@ function server() {
         server: "app/",
         host:"winlocal",
         port: 57001,
-        logPrefix: "Sß.ŞEN"
+        logPrefix: "S.ŞEN"
     });
     watcher()
 }
@@ -50,8 +50,10 @@ function scripts() {
 }
 
 function watcher(){
-    watch([source + 'scss/**/*.scss'], styles);
+    watch([source + 'scss/*.scss'], styles);
+    watch([source + 'cdn/scss/*.scss'], styles);
     watch([source + 'js/*.js'], scripts);
+    watch([source + 'cdn/js/*.js'], styles);
     watch(['app/*.html'], reload);
 }
 
