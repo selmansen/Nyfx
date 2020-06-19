@@ -1,10 +1,32 @@
 // = IMPORT
-@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed:300,400,600&display=swap&subset=latin-ext');
-@import "../cdn/scss/css3-mixins";
-@import "../css/animate";
-@import "../cdn/scss/bootstrap/bootstrap";
+@import "../../../node_modules/animate.css/animate";
+@import "../../../node_modules/bootstrap/scss/bootstrap";
 @import "../cdn/scss/reset";
 
 //------------------------------------------------------------
 // = CUSTOM VARIABLES
 //------------------------------------------------------------
+.mt-100{
+    margin-top:100px;
+}
+.white-label-page{
+    .wlabel-items{
+        .items{
+            height: 350px;
+            border-radius: 5px;
+            background-size: cover !important;
+            &.item1{
+                background: url("../img/wlabel-img-1.jpg") no-repeat;
+            }
+            &.item2{
+                background: url("../img/wlabel-img-2.jpg") no-repeat;
+            }
+            &.item3{
+                background: url("../img/wlabel-img-3.jpg") no-repeat;
+            }
+            &.item4{
+                background: url("../img/wlabel-img-4.jpg") no-repeat;
+            }
+        }
+    }
+}

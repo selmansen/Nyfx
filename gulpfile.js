@@ -9,8 +9,6 @@ const plumber = require('gulp-plumber');
 const autoprefixer = require('gulp-autoprefixer');
 const source = 'app/assets/';
 
-
-
 function server() {
     browserSync.init({
         server: "app/",
